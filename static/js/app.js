@@ -26,7 +26,7 @@ function buildTable(data) {
 }
 
 // Create handle click function
-function handleclick() {
+function handleClick() {
     // Grab the datetime value from the filter
     let date = d3.select("#datetime").property("value");
     let filteredData = tableData;
@@ -40,7 +40,7 @@ function handleclick() {
         // Rebuilt the table using the filtered data
         // @Note: if no date was enterd, then filteredData will
         // just be the original tableData.
-        builtTable(filteredData);
+        buildTable(filteredData);
 };
 
 // Listen for event
